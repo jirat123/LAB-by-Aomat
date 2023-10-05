@@ -6,7 +6,6 @@ int main()
     int score = 0;
     while (n >= 10) {
         int d1 = (n % 100) / 10, d2 = n % 10;
-        //printf("d1 = %d\nd2 = %d\n\n", d1, d2);
         int c = 0;
         if (d1 + d2 == 2 || d1 + d2 == 3 || d1 + d2 == 5 || d1 + d2 == 7 || 
             d1 + d2 == 11 || d1 + d2 == 13 || d1 + d2 == 17) {
@@ -30,7 +29,6 @@ int main()
         if (c == 3) {
             score += 4;
         }
-        //printf("score = %d\n", score);
         n /= 10;
     }
     printf("%d\n", score);
